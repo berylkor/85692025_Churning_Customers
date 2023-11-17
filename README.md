@@ -5,18 +5,18 @@
 Churn Prediction Model
 
 # Overview
-Content
-Data Preprocessing
+# Content
+# Data Preprocessing
 
-Data Preprocessing
-Feature Selection
-Exploratory Data Analysis (EDA)
+# Data Preprocessing
+# Feature Selection
+# Exploratory Data Analysis (EDA)
 
-Exploratory Data Analysis (EDA)
-Artificial Neural Network (ANN) Training and Testing
+# Exploratory Data Analysis (EDA)
+# Artificial Neural Network (ANN) Training and Testing
 
-ANN Training and Testing
-Grid Search for Hyperparameter Tuning
+# ANN Training and Testing
+# Grid Search for Hyperparameter Tuning
 
 Grid Search for Hyperparameter Tuning
 Exporting Model and Preprocessing Objects
