@@ -24,6 +24,7 @@ str.title('Customer churn prediction by 85692025')
 
 # main function
 def main():
+    # inputs for features used for prediction
     TotalCharges = str.number_input('Customer total charges', 0, key='TotalCharges')
     MonthlyCharges = str.number_input('Customer monthly charges', 0, key= 'MonthlyCharges')
     Tenure = str.number_input('Customer tenure', 0, key = 'tenure')
@@ -37,29 +38,26 @@ def main():
     DeviceProtection = str.selectbox('Device protection provided', ['Yes', 'No', 'No internet service'], key= 'DeviceProtection')
 
     if str.button('Predict', key = 'predict_churn_button'):
-        user_numeric_inputs = np.array([[TotalCharges,MonthlyCharges,Tenure]])
-        user_object_inputs = np.array([[Contract,PaymentMethod, TechSupport, OnlineSecurity, Gender, InternetService, OnlineBackup,DeviceProtection]])
-        load_encoder.fit(user_object_inputs.flatten())
+        user_numeric_inputs = np.array([[TotalCharges,MonthlyCharges,Tenure]]) # array for the numeric columns
+        user_object_inputs = np.array([[Contract,PaymentMethod, TechSupport, OnlineSecurity, Gender, InternetService, OnlineBackup,DeviceProtection]]) # array for the object columns
+        load_encoder.fit(user_object_inputs.flatten()) # encode the data
 
         object_transformed = load_encoder.transform(user_object_inputs.flatten())
         object_reshaped = object_transformed.reshape(-1, 1)
         numeric_reshaped = user_numeric_inputs.reshape(-1, 1)
 
-        data = np.concatenate((object_reshaped, numeric_reshaped), axis = 0).T
-        scaled_data = loaded_scalar.transform(data)
+        data = np.concatenate((object_reshaped, numeric_reshaped), axis = 0).T # conbining the numeric and object features
+        scaled_data = loaded_scalar.transform(data) # scaling the data
         prediction_prob = functional_model.predict(scaled_data)
         prediction = np.argmax(prediction_prob)
-        confidence = float(prediction_prob[np.argmax(prediction)] * 100)
-
-        print("Prediction Probabilities:", prediction_prob)
-        print("Predicted Class:", prediction)
-        print("Confidence Score:", confidence)
+        confidence = float( max(prediction_prob, 1 - prediction_prob)) # calculate confidence score of the model
+        
 
         if prediction == 1:
-            str.write('The customer may churn')
+            str.write('The customer may churn') # returns churn when the prediction is 1
         elif prediction == 0:
-            str.write('The customer may not churn')
-        str.write(f'Confidence score: {confidence:.2f}%')
+            str.write('The customer may not churn') # returns not churn when the prediction is 0
+        str.write(f'Confidence score: {confidence:.2f}%') # displays the confidence score for the prediction
 
 main()
 
