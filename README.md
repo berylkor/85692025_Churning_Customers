@@ -3,7 +3,7 @@
 
 This repository contains a Jupyter Notebook, 85692025_Churning_Customers.ipynb that focuses on predicting customer churn using a Telco customer dataset. The notebook covers the entire data analysis and modeling pipeline, from importing the dataset to training an artificial neural network. The key steps include data preprocessing, feature engineering, exploratory data analysis (EDA), and implementing a Keras ANN.
 
-# Content
+## Content
 Importing Datasets:
 
 The notebook begins with importing the necessary libraries and loading the customer churn dataset.
