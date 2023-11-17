@@ -53,7 +53,16 @@ Modify parameters or experiment with different configurations as needed.
   
 * Python 3.x
 * Jupyter Notebook
-* Libraries: pandas, numpy, scikit-learn, matplotlib, seaborn, keras, tensorflow
+* Libraries:
+   *  Pandas
+   *  NumPy
+   *  scikit-learn
+   *  matplotlib
+   *  seaborn
+   *  keras
+   *  TensorFlow
+
+## Video demonstration of the web app
   
 ## Web app Link 
 https://vfqgscet3drdgmqdbwm7xa.streamlit.app/
