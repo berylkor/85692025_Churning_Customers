@@ -1,14 +1,14 @@
 
 ## Overview
 
-This repository contains a Jupyter Notebook (85692025_Churning_Customers.ipynb) that focuses on predicting customer churn using a Telco customer dataset. The notebook covers the entire data analysis and modeling pipeline, from importing the dataset to training an artificial neural network. The key steps include data preprocessing, feature engineering, exploratory data analysis, and the implementation of an artificial neural network using Keras.
+This repository contains a Jupyter Notebook, 85692025_Churning_Customers.ipynb that focuses on predicting customer churn using a Telco customer dataset. The notebook covers the entire data analysis and modeling pipeline, from importing the dataset to training an artificial neural network. The key steps include data preprocessing, feature engineering, exploratory data analysis (EDA), and implementing a Keras ANN.
 
 # Content
 Importing Datasets:
 
-The notebook begins with importing the necessary libraries and loading the Telco customer churn dataset.
-Relevant Features:
+The notebook begins with importing the necessary libraries and loading the customer churn dataset.
 
+Relevant Features:
 Drops irrelevant columns and performs label encoding on the target variable ('Churn').
 Handles missing values in the 'TotalCharges' column.
 
@@ -31,7 +31,7 @@ Artificial Neural Network (ANN) Training and Testing:
 Implements a Keras Functional API model for predicting churn.
 Splits the dataset into training, validation, and test sets.
 Trains the model and evaluates its performance on the test set.
-Uses AUC (Area Under the Receiver Operating Characteristic curve) as an additional evaluation metric.
+Uses AUC as an additional evaluation metric.
 
 ## Grid Search for Hyperparameter Tuning
 Grid Search for Hyperparameter Tuning:
@@ -44,9 +44,9 @@ Exporting Model and Preprocessing Objects:
 Saves the trained functional model, StandardScaler, and LabelEncoder for future use.
 
 ## Usage
-Open the Jupyter Notebook (85692025_Churning_Customers.ipynb) using Jupyter Notebook or Google Colab.
+Open the Notebook using Jupyter Notebook or Google Colab.
 Run each cell sequentially to execute the code.
-Follow the detailed comments and markdown cells for explanations of each step.
+Follow the comments and markdown cells for explanations of each step.
 Modify parameters or experiment with different configurations as needed.
 
 ## Requirements
@@ -63,6 +63,7 @@ Modify parameters or experiment with different configurations as needed.
    *  TensorFlow
 
 ## Video demonstration of the web app
+https://drive.google.com/drive/folders/1YM_ybO63K5VtVA81NcJqFHsqYQ42UqvZ?usp=sharing
   
 ## Web app Link 
 https://vfqgscet3drdgmqdbwm7xa.streamlit.app/
