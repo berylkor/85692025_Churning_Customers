@@ -51,9 +51,9 @@ Modify parameters or experiment with different configurations as needed.
 
 ## Requirements
   
-Python 3.x
-Jupyter Notebook
-Libraries: pandas, numpy, scikit-learn, matplotlib, seaborn, keras, tensorflow
+* Python 3.x
+* Jupyter Notebook
+* Libraries: pandas, numpy, scikit-learn, matplotlib, seaborn, keras, tensorflow
   
 ## Web app Link 
 https://vfqgscet3drdgmqdbwm7xa.streamlit.app/
