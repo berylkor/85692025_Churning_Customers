@@ -1,30 +1,5 @@
 <details open style="margin-bottom: 10px;">
-<summary style="font-size: 18px; font-weight: bold; color: #0366d6; border-bottom: 1px solid #d1d5da; padding-bottom: 5px;">Table of Contents</summary>
-Churn Prediction Model
-
-Overview
-Content
-Data Preprocessing
-
-Data Preprocessing
-Feature Selection
-Exploratory Data Analysis (EDA)
-
-Exploratory Data Analysis (EDA)
-Artificial Neural Network (ANN) Training and Testing
-
-ANN Training and Testing
-Grid Search for Hyperparameter Tuning
-
-Grid Search for Hyperparameter Tuning
-Exporting Model and Preprocessing Objects
-
-Exporting Model and Preprocessing Objects
-Usage
-
-Requirements
-
-</details>
+>
 <details style="margin-bottom: 10px;">
 <summary style="font-size: 18px; font-weight: bold; color: #0366d6; border-bottom: 1px solid #d1d5da; padding-bottom: 5px;">Churn Prediction Model</summary>
 Overview
